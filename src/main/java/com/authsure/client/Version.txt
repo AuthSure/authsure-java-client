@@ -1,0 +1,6 @@
+package com.authsure.client;
+
+public class Version {
+	public static final String BUILDTIME = "@buildtime@";
+	public static final String VERSION = "@version@";
+}
