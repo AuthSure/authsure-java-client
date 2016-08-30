@@ -30,4 +30,8 @@ public class AuthSureLogin implements Principal, Serializable {
 		}
 		return null;
 	}
+
+	public boolean isExpired() {
+		return sessionExpiration != null && sessionExpiration.before(new Date());
+	}
 }
