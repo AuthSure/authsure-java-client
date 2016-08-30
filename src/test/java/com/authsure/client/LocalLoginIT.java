@@ -90,7 +90,8 @@ public class LocalLoginIT {
 		assertThat(token, not(isEmptyOrNullString()));
 		log.info("Retrieved token: " + token);
 
-		
+		AuthSureLogin login = client.validateLogin(token);
+		assertThat("admin", equalTo(login.getName()));
 
 	}
 

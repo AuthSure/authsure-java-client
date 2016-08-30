@@ -24,7 +24,7 @@ public class AuthSureLogin implements Principal, Serializable {
 	@Override
 	public String getName() {
 		for (AuthSureProviderIdentity providerIdentity : identity.getProviderIdentities()) {
-			if (providerIdentity.getId().equals(authentictingProvider)) {
+			if (providerIdentity.getProvider().equals(authentictingProvider)) {
 				return providerIdentity.getUsername();
 			}
 		}
