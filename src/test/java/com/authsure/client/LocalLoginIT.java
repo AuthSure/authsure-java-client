@@ -91,7 +91,9 @@ public class LocalLoginIT {
 		log.info("Retrieved token: " + token);
 
 		AuthSureLogin login = client.validateLogin(token);
-		assertThat("admin", equalTo(login.getName()));
+		assertThat(login.getName(), equalTo("admin"));
+		assertThat(login.getIdentity().getRoles().size(), equalTo(1));
+		assertThat(login.getIdentity().getRoles().get(0), equalTo("AS_ADMIN"));
 
 	}
 

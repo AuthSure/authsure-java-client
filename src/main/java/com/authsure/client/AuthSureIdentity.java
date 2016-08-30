@@ -19,5 +19,9 @@ public class AuthSureIdentity implements Serializable {
 	private UUID id;
 	private AuthSureIdentityType type;
 	private List<AuthSureProviderIdentity> providerIdentities;
+	private List<String> groups;
+	private List<String> roles;
+	private List<String> permissions;
+	private List<String> effectivePermissions;
 
 }
