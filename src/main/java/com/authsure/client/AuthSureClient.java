@@ -17,9 +17,11 @@ public class AuthSureClient implements Serializable {
 
 	private static final long serialVersionUID = -8090828763929068073L;
 
+	protected String url;
 	protected RestClient restClient;
 
 	public AuthSureClient(String url, String username, String password) {
+		this.url = url;
 		this.restClient = new URLConnectionRestClient(url, username, password);
 	}
 
@@ -29,6 +31,10 @@ public class AuthSureClient implements Serializable {
 
 	public RestClient getRestClient() {
 		return restClient;
+	}
+
+	public String getUrl() {
+		return url;
 	}
 
 	@Data

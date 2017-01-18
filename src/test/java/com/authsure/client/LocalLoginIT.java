@@ -3,7 +3,10 @@ package com.authsure.client;
 import com.authsure.client.http.RestClient;
 import com.authsure.client.http.URLConnectionRestClient;
 import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.*;
+import com.gargoylesoftware.htmlunit.html.HtmlButton;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import com.gargoylesoftware.htmlunit.html.HtmlPasswordInput;
+import com.gargoylesoftware.htmlunit.html.HtmlTextInput;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,12 +15,11 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.net.HttpURLConnection;
 import java.util.List;
 import java.util.Properties;
 
 import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 /**
  * @author Erik R. Jensen
@@ -93,7 +95,7 @@ public class LocalLoginIT {
 		AuthSureLogin login = client.validateLogin(token);
 		assertThat(login.getName(), equalTo("admin"));
 		assertThat(login.getIdentity().getRoles().size(), equalTo(1));
-		assertThat(login.getIdentity().getRoles().get(0), equalTo("AS_ADMIN"));
+		assertThat(login.getIdentity().getRoles().iterator().next(), equalTo("AS_ADMIN"));
 
 	}
 
