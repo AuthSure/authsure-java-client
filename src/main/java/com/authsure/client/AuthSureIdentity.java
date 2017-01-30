@@ -20,6 +20,7 @@ import java.util.UUID;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonSubTypes({
 		@JsonSubTypes.Type(value = AuthSureLocalIdentity.class, name = "Local"),
+		@JsonSubTypes.Type(value = AuthSureFacebookIdentity.class, name = "Facebook"),
 		@JsonSubTypes.Type(value = AuthSureGoogleIdentity.class, name = "Google")})
 @JsonTypeInfo(
 		use = JsonTypeInfo.Id.NAME,
