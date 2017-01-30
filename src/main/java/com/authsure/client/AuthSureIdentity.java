@@ -20,7 +20,9 @@ import java.util.UUID;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonSubTypes({
 		@JsonSubTypes.Type(value = AuthSureLocalIdentity.class, name = "Local"),
-		@JsonSubTypes.Type(value = AuthSureGoogleIdentity.class, name = "Google")})
+		@JsonSubTypes.Type(value = AuthSureGoogleIdentity.class, name = "Google"),
+		@JsonSubTypes.Type(value = AuthSureTwitterIdentity.class, name = "Twitter")
+})
 @JsonTypeInfo(
 		use = JsonTypeInfo.Id.NAME,
 		include = JsonTypeInfo.As.PROPERTY,
