@@ -22,6 +22,7 @@ import java.util.UUID;
 		@JsonSubTypes.Type(value = AuthSureLocalIdentity.class, name = "Local"),
 		@JsonSubTypes.Type(value = AuthSureGoogleIdentity.class, name = "Google"),
 		@JsonSubTypes.Type(value = AuthSureFacebookIdentity.class, name = "Facebook"),
+		@JsonSubTypes.Type(value = AuthSureSalesforceIdentity.class, name = "Salesforce"),
 		@JsonSubTypes.Type(value = AuthSureYahooIdentity.class, name = "Yahoo"),
 		@JsonSubTypes.Type(value = AuthSureTwitterIdentity.class, name = "Twitter")
 })
