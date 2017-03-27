@@ -26,7 +26,8 @@ import java.util.UUID;
 		@JsonSubTypes.Type(value = AuthSureGitHubIdentity.class, name = "GitHub"),
 		@JsonSubTypes.Type(value = AuthSureYahooIdentity.class, name = "Yahoo"),
 		@JsonSubTypes.Type(value = AuthSureAzureADIdentity.class, name = "Azure AD"),
-		@JsonSubTypes.Type(value = AuthSureTwitterIdentity.class, name = "Twitter")
+		@JsonSubTypes.Type(value = AuthSureTwitterIdentity.class, name = "Twitter"),
+		@JsonSubTypes.Type(value = AuthSureTwitterIdentity.class, name = "Simple API")
 })
 @JsonTypeInfo(
 		use = JsonTypeInfo.Id.NAME,
