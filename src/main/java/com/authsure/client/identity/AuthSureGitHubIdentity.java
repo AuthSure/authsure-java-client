@@ -1,5 +1,6 @@
-package com.authsure.client;
+package com.authsure.client.identity;
 
+import com.authsure.client.Gender;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

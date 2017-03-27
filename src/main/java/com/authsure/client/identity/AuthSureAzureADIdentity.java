@@ -1,5 +1,6 @@
-package com.authsure.client;
+package com.authsure.client.identity;
 
+import com.authsure.client.Gender;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -7,16 +8,16 @@ import lombok.ToString;
 import lombok.experimental.Accessors;
 
 /**
- * @author Erik R. Jensen
+ * @author Dilip S Sisodia
  */
 @Data
 @Accessors(chain = true)
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class AuthSureGoogleIdentity extends AuthSureIdentity {
+public class AuthSureAzureADIdentity extends AuthSureIdentity {
 
-	private static final long serialVersionUID = 4849420406410899200L;
+	private static final long serialVersionUID = -1952948152321588676L;
 
 	protected String email;
 	protected String name;

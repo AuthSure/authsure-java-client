@@ -1,5 +1,6 @@
-package com.authsure.client;
+package com.authsure.client.identity;
 
+import com.authsure.client.*;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
@@ -7,7 +8,6 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
-import java.security.Principal;
 import java.util.List;
 import java.util.Set;
 import java.util.UUID;

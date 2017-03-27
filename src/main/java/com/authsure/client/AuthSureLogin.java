@@ -1,12 +1,12 @@
 package com.authsure.client;
 
+import com.authsure.client.identity.AuthSureIdentity;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.security.Principal;
 import java.util.Date;
-import java.util.UUID;
 
 /**
  * @author Erik R. Jensen

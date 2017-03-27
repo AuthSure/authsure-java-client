@@ -1,5 +1,7 @@
-package com.authsure.client;
+package com.authsure.client.identity;
 
+import com.authsure.client.Gender;
+import com.authsure.client.identity.AuthSureIdentity;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -14,9 +16,9 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class AuthSureFacebookIdentity extends AuthSureIdentity {
+public class AuthSureYahooIdentity extends AuthSureIdentity {
 
-	private static final long serialVersionUID = 3578312272602321085L;
+	private static final long serialVersionUID = 466368861581873409L;
 
 	protected String email;
 	protected String name;

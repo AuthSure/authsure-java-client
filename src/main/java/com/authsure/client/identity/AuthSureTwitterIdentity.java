@@ -1,5 +1,7 @@
-package com.authsure.client;
+package com.authsure.client.identity;
 
+import com.authsure.client.Gender;
+import com.authsure.client.identity.AuthSureIdentity;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -14,9 +16,9 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class AuthSureSalesforceIdentity extends AuthSureIdentity {
+public class AuthSureTwitterIdentity  extends AuthSureIdentity {
 
-	private static final long serialVersionUID = 4452442924480686626L;
+	private static final long serialVersionUID = -7228090595948122340L;
 
 	protected String email;
 	protected String name;

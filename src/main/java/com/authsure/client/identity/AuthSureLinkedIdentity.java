@@ -1,4 +1,4 @@
-package com.authsure.client;
+package com.authsure.client.identity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
