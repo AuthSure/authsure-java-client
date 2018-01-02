@@ -7,6 +7,8 @@ import lombok.experimental.Accessors;
 import java.util.UUID;
 
 /**
+ * AuthSure Linked Identities.
+ *
  * @author Erik R. Jensen
  */
 @Data
@@ -14,7 +16,7 @@ import java.util.UUID;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AuthSureLinkedIdentity {
 
-	private UUID id;
-	private String provider;
+  private UUID id;
+  private String provider;
 
 }

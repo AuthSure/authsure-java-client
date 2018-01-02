@@ -7,6 +7,8 @@ import lombok.ToString;
 import lombok.experimental.Accessors;
 
 /**
+ * AuthSure API Identity.
+ *
  * @author Erik R. Jensen
  */
 @Data
@@ -16,16 +18,16 @@ import lombok.experimental.Accessors;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AuthSureSimpleApiIdentity extends AuthSureIdentity {
 
-    private static final long serialVersionUID = 7954723395253074296L;
+  private static final long serialVersionUID = 7954723395253074296L;
 
-    protected String username;
-    protected String name;
-    protected String givenName;
-    protected String familyName;
-    protected String email;
+  protected String username;
+  protected String name;
+  protected String givenName;
+  protected String familyName;
+  protected String email;
 
-    @Override
-    public String getPrincipalName() {
-        return username;
-    }
+  @Override
+  public String getPrincipalName() {
+    return username;
+  }
 }

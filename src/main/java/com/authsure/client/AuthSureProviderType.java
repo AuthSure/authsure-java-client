@@ -8,6 +8,8 @@ import java.io.Serializable;
 import java.util.UUID;
 
 /**
+ * Holds provider type data.
+ *
  * @author Erik R. Jensen
  */
 @Data
@@ -15,8 +17,8 @@ import java.util.UUID;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AuthSureProviderType implements Serializable {
 
-	private static final long serialVersionUID = 8713619483780516203L;
+  private static final long serialVersionUID = 8713619483780516203L;
 
-	private UUID id;
-	private String name;
+  private UUID id;
+  private String name;
 }
